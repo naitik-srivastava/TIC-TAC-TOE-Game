@@ -10,6 +10,8 @@ h1 {
 body {
     background-color: #F4EDED;
     text-align: center;
+    position: relative; /* Added to allow absolute positioning of video */
+    overflow: hidden; /* Prevent scrolling from video */
 }
 
 .container {
@@ -17,12 +19,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+border:none;
 }
 
 .game {
     margin-top: 105px;
     height: 60vmin;
+    border:none;
 
     width: 60vmin;
     display: flex;
@@ -30,7 +33,7 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1.5vmin;
-    border: 1px solid #F4EDED;
+    /* border: 1px solid #F4EDED; */
 }
 
 .box {
@@ -100,23 +103,23 @@ body {
     color: #464D77;
     background-color: rgba(249, 219, 109, 0.2);
     border-radius: 10px;
-    }
+}
 
-    .hide {
-        display:none;
-    }
+.hide {
+    display: none;
+}
 
-    h1{
-        border: 2px dotted black;
-        width: 30vw;
-        margin-left: 34vw;
-        background-image: url("https://media.istockphoto.com/id/1227598160/vector/seamless-retro-abstract-shapes-background.jpg?s=612x612&w=0&k=20&c=WHHStjD2Sai8yih1wnakp_lfbZ4rKhZanQ2PzkjfuSw=");
-        background-size: cover;
-        color:#FFD700;
-        border-radius: 6px;
-    }
+h1 {
+    border: 2px dotted black;
+    width: 30vw;
+    margin-left: 34.5vw;
+    background-image: url("https://media.istockphoto.com/id/1227598160/vector/seamless-retro-abstract-shapes-background.jpg?s=612x612&w=0&k=20&c=WHHStjD2Sai8yih1wnakp_lfbZ4rKhZanQ2PzkjfuSw=");
+    background-size: cover;
+    color: #FFD700;
+    border-radius: 6px;
+}
 
- .y{
+.y {
     font-weight: 700;
     color: #F9DB6D;
     background-color: #464D77;
@@ -131,4 +134,32 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
+
+
+
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:110vh ;
+    z-index: -1; /* Place behind other content */
+    overflow: hidden;
+    margin-top: -35px;
+
+}
+
+.video-container video {
+    min-width: 100vw;
+    margin-top: -35px;
+    min-height: 110vh;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: opacity(10%);
+}
