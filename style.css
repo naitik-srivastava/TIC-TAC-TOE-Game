@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 25px;
+}
+
+body {
+    background-color: #F4EDED;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.game {
+    margin-top: 105px;
+    height: 60vmin;
+
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+    border: 1px solid #F4EDED;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    background-color: #464D77;
+    font-size: 8vmin;
+    color: #FFD700;
+
+}
+
+.reset {
+    margin-top: 70px;
+    padding: .7rem;
+    font-size: 1rem;
+    background-color: #F9DB6D;
+    color: #464D77;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.newgame {
+    margin-top: 70px;
+    padding: .7rem;
+    font-size: 1rem;
+    background-color: #F9DB6D;
+    color: #464D77;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 100px;
+}
+
+.winner {
+    font-weight: 700;
+    color: #F9DB6D;
+    background-color: #464D77;
+    width: 10vw;
+    height: 9vh;
+    font-size: 6vh;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border: 1px dotted #F9DB6D;
+    border-radius: 9px;
+    margin-bottom: 100px;
+    transform: scale(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.winprompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 200px;
+    margin-top: 150px;
+}
+
+.congrats {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #464D77;
+    background-color: rgba(249, 219, 109, 0.2);
+    border-radius: 10px;
+    }
+
+    .hide {
+        display:none;
+    }
+
+    h1{
+        border: 2px dotted black;
+        width: 30vw;
+        margin-left: 34vw;
+        background-image: url("https://media.istockphoto.com/id/1227598160/vector/seamless-retro-abstract-shapes-background.jpg?s=612x612&w=0&k=20&c=WHHStjD2Sai8yih1wnakp_lfbZ4rKhZanQ2PzkjfuSw=");
+        background-size: cover;
+        color:#FFD700;
+        border-radius: 6px;
+    }
+
+ .y{
+    font-weight: 700;
+    color: #F9DB6D;
+    background-color: #464D77;
+    width: 10vw;
+    height: 9vh;
+    font-size: 4vh;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border: 1px dotted #F9DB6D;
+    border-radius: 9px;
+    margin-bottom: 100px;
+    transform: scale(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
